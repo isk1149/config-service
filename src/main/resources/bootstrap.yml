@@ -1,0 +1,11 @@
+encrypt:
+  #key는 대칭키로 쓸 때 사용
+  #key: config-server-key-askfhl12!#@g123%^&asdf
+  #key-store는 비대칭키 쓸 때 사용
+  key-store:
+    #윈도우
+    location: file:///d:\study\MSA실습\keystore\apiEncryptionKey.jks
+    #리눅스
+    #location: file://${user.home}/Desktop/Work/keystore/apiEncryptionKey.jks
+    password: 1q2w3e4r
+    alias: apiEncryptionKey

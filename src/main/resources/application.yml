@@ -1,0 +1,25 @@
+server:
+  port: 8888
+
+spring:
+  application:
+    name: config-service
+  rabbitmq:
+    host: 127.0.0.1
+    port: 5672
+    username: guest
+    password: guest
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/isk1149/spring-cloud-config.git #.git안써도 무방
+          #username: private repository면 추가 기입
+          #password: private repository면 추가 기입
+          default-label: master #initial label could be main branch
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health, busrefresh

@@ -1,0 +1,14 @@
+###
+GET http://localhost:8888/user-service/default
+
+###
+POST http://localhost:8888/encrypt
+content-type: plain/text
+
+token_user_service_asdf123$#%
+
+###
+POST http://localhost:8888/decrypt
+content-type: plain/text
+
+AQAA2jrTEkSWgDiOFY5OuovD7VV3lBa2rk3UvzSmNLalGILMQ7cVE2UWJfxO9xzB8PTiHsv/mz3qNYSPrUfPj0CETUIcNlB0AGce5BqntCyOd5Nsxh+TgW5TM94E7/4gnqCMjk6dInjuEh+vI2iNfoj2CwL+OiFzn9l5hqoeG5/cJ/lUtFIQ/3dgpGVBdBwrPZ62DwWPvdUDYJKOZzD8D+dVtoqobfEx6Z33JIEvEM2HppuUh7DZGna37fJ8O4eP7w5xa0FInkIbw9k+AeEXfurBIq9w9xZYdokXTsis8ztkffjbCwu0AoZwPWk9cOqfo/gOnxFFysJFkogS9CW6l4Lz5QoLBoiKhFkarJTQyzBDmklQiOrIbPFY3LZOhh/UrN9lR1pH6P8IXuaS253Kgi5n
